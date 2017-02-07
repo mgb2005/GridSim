@@ -10,27 +10,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.mgb2005.gridsim.MainActivity">
 
-    <TextView
+    <Button
+        android:text="Button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Button 1"
+        android:text="Button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:id="@+id/button" />
-
-    <Button
-        android:text="Button 2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:id="@+id/button2" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button"
+        android:id="@+id/GRID1"
+        android:numColumns="16"
+        android:columnWidth="51px"
+        android:stretchMode="spacingWidthUniform"
+
+        />
+
 </RelativeLayout>
